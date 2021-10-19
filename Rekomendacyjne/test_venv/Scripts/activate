@@ -37,7 +37,7 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
-VIRTUAL_ENV="C:\Users\macie\Documents\Studia\Semestr VII\Rekomendacyjne\test_venv"
+VIRTUAL_ENV="C:\Users\macie\Documents\Studia\Semestr VII\semestr-7\Rekomendacyjne\test_venv"
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"
@@ -64,3 +64,4 @@ fi
 if [ -n "${BASH:-}" -o -n "${ZSH_VERSION:-}" ] ; then
     hash -r 2> /dev/null
 fi
+
