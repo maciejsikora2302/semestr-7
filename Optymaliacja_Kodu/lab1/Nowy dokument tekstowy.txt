@@ -1,8 +1,8 @@
-[Time: 6.161440e-001 |O2 ] no_opt
-[Time: 5.410910e-001 |O2 ] opt1 -> dodać register unsigned int
-[Time: 4.781120e-001 |O2 ] opt2 -> to co było sizem jako parametr, to zrobić jego lokalną kopię w rejestrze
-[nie działa -> do porpawy |O2 ] opt3 -> przejście po pętlach w drugą stronę
-[Time: 4.881870e-001 |O2 Time: 1.562850e-001] opt4 -> fork z opt2, krok "co 8"
-[Time: 3.689170e-001 |O2 Time: 1.644410e-001] opt5 -> rejestr na sume, zwinięcie do jednej linijki sumowania
-[Time: 2.963850e-001 |O2 Time: 1.781470e-001] opt6 -> zamienić wiersze z kolumnami
+[Time: 6.161440e-001 |O2-> ] no_opt
+[Time: 5.410910e-001 |O2-> ] opt1 -> dodać register unsigned int
+[Time: 4.781120e-001 |O2-> ] opt2 -> to co było sizem jako parametr, to zrobić jego lokalną kopię w rejestrze
+[nie działa -> do porpawy |O2-> ] opt3 -> przejście po pętlach w drugą stronę
+[Time: 4.881870e-001 |O2-> ] opt4 -> fork z opt2, krok "co 8"
+[Time: 3.689170e-001 |O2-> ] opt5 -> rejestr na sume, zwinięcie do jednej linijki sumowania
+[Time: 2.963850e-001 |O2-> Time: 1.781470e-001] opt6 -> zamienić wiersze z kolumnami
 [] opt7 -> skompilować wszystko poprzednie iteracje z flagą -O
