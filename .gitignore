@@ -1,4 +1,8 @@
 git_env/*
 test_venv/*
 mi-latest-small/*
+<<<<<<< HEAD
 socialmediadata-beeradvocate*
+=======
+*beer*
+>>>>>>> 8635b085ae4a9cf99e5f344ef41225ed5a981f68
