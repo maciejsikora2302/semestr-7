@@ -634,7 +634,6 @@ function y=init_state_ball(x)
   alpha=10.0;
   lambda=12; 
   y=alpha*phi(lambda*dist);
-  y
 end
 
 function y=init_state_1(x)
@@ -646,17 +645,16 @@ function y=init_state_bitmap(x)
 end
 
 % Input data
-knot = simple_knot(5, 2)     % knot vector (5,2)
-dt = 0.0001;                    % time step size
+knot = simple_knot(20 , 2)     % knot vector (5,2)
+dt = 0.00005;                    % time step size
 theta = 0;                  % scheme parameter (0 - explicit Euler, 1 - implicit Euler, 1/2 - Crank-Nicolson)
-K = 10;                       % number of time steps
-
+K = 1200;                       % number of time steps
 % Problem formulation
 %f = @(t, x) 1;
 %init_state = @(x) 0;
 
 f = @(t, x) 0;
-init_state = @(x) init_state_ball(x);
+init_state = @(x) init_state_1(x);
 
 % Setup
 p = degree_from_knot(knot);
@@ -697,8 +695,19 @@ end
 fixed_dofs = boundary_dofs2d(bx, by);
 [M, F] = dirichlet_bc_uniform(M, F, fixed_dofs, bx, by);
 
+data = imread("img_center_small2_inv.png");
+
+tmp = cast(data,'double') / cast(320, 'double');
+tmp = [tmp,zeros(20, 100, 3)];
+tmp = [tmp;zeros(50, 120, 3)];
+
+
+u = tmp
+
+
 % Put the initial state into u
-u = project2d(init_state, bx, by);
+%u = project2d(init_state, bx, by)
+
 
 % Plot the initial state
 save_plot(u, 0, bx, by);
