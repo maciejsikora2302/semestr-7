@@ -648,7 +648,7 @@ end
 knot = simple_knot(20 , 2)     % knot vector (5,2)
 dt = 0.00005;                    % time step size
 theta = 0;                  % scheme parameter (0 - explicit Euler, 1 - implicit Euler, 1/2 - Crank-Nicolson)
-K = 1200;                       % number of time steps
+K = 100;                       % number of time steps
 % Problem formulation
 %f = @(t, x) 1;
 %init_state = @(x) 0;
